@@ -47,7 +47,7 @@ services:
     environment:
       # Kafka 브로커 접속 주소 지정 (컨테이너 내부 호스트명 'kafka-broker' 사용)
       KAFKA_CLUSTERS_0_NAME: local-kafka-cluster
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: 172.30.32.224:9092 #임시, 추후 변경 필요
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: localhost:9092 #임시, 추후 변경 필요
       # Topic 생성을 활성화 (선택 사항)
       KAFKA_CLUSTERS_0_TOPIC_CREATION_ENABLED: "true"
     depends_on:
