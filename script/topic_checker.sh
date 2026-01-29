@@ -23,5 +23,6 @@ create_topic_if_missing() {
 create_topic_if_missing robot-heartbeat 1 1
 create_topic_if_missing robot-status 1 1
 create_topic_if_missing robot-position 1 1
+create_topic_if_missing robot-slam-map 1 1
 
 echo "topic check complete"
